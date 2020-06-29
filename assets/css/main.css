@@ -3263,7 +3263,8 @@ input, select, textarea {
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				//color: #8d82c4;
+				color: #ffffff;
 			}
 
 			#header.alt.style3 .logo strong {
