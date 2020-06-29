@@ -3153,11 +3153,11 @@ input, select, textarea {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #cacbcc;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: #a2a2a2;
 			}
 
 		#header nav {
@@ -3410,7 +3410,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #ec8d81;
+			background-color: #333856;
 			content: '';
 			display: block;
 			height: 100%;
