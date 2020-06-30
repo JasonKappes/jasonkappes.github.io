@@ -2947,13 +2947,13 @@ input, select, textarea {
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 30%;
+				width: 15%;
 			}
 
 				.spotlights > section > .image img {
 					border-radius: 0;
 					display: block;
-					width: 100%;
+					width: 50%;
 				}
 
 				.spotlights > section > .image:before {
@@ -2965,7 +2965,7 @@ input, select, textarea {
 					opacity: 0;
 					position: absolute;
 					top: 0;
-					width: 100%;
+					width: 50%;
 				}
 
 			.spotlights > section > .content {
@@ -2986,13 +2986,13 @@ input, select, textarea {
 				-ms-align-items: center;
 				align-items: center;
 				padding: 2em 3em 0.1em 3em ;
-				width: 70%;
+				width: 35%;
 			}
 
 				.spotlights > section > .content > .inner {
 					margin: 0 auto;
 					max-width: 100%;
-					width: 50em;
+					width: 65em;
 				}
 
 			.spotlights > section:nth-child(2n) {
