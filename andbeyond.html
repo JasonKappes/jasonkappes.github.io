@@ -86,10 +86,10 @@
 										<header class="major">
 											<h3>Longer Length Gameplay</h3>
 										</header>
-										<p>This is a longer form version of the gameplay. The idea of the game is that the player must rebuild his spaceship.<br />
-										To get these ship parts, the player needs to traverse to different planets. Some of the time, the player will need to <br />
-										to trade with the alien species, called "nauts", to get a ship part. From a gameplay perspective, there was a major <br />
-										focus on getting the traversal mechanics to feel well and transition smoothly inbetween one another. The camera <br />
+										<p>This is a longer form version of the gameplay. The idea of the game is that the player must rebuild his spaceship.
+										To get these ship parts, the player needs to traverse to different planets. Some of the time, the player will need to
+										to trade with the alien species, called "nauts", to get a ship part. From a gameplay perspective, there was a major
+										focus on getting the traversal mechanics to feel well and transition smoothly inbetween one another. The camera
 										manipulation was a factor for this as well.</p>
 										<ul class="actions">
 											<li><iframe width="560" height="315" src="https://www.youtube.com/embed/18EfKPa6N08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
@@ -103,18 +103,22 @@
 						<section id="two">
 							<div class="inner">
 								<header class="major">
-									<h3>Kap Engine Systems Showcase</h3>
+									<h3>Development Challenges and Problems Solved</h3>
 								</header>
 								<p>
-									| GameObject: The user can inherit from the GameObject class and thus utilize many engine-level capabilities.<br />
-									| 3D Object Collision: This supports collisions between 3D objects. The user can select a Bsphere, OBB, or AABB collision model for any object.<br />
-									| 3D Mouse Selection: This allows the user to detect collisions between mouse and a 3D object.<br />
-									| Terrain Management: Terrain generation and customization from user files and efficient terrain collision.<br />
-									| Asset Management: Texture, Model, and Shader file management.<br />
-									| Rendering: Objects can be rendered as 2D or 3D objects. A basic graphics engine was used for shading, texturing, and modeling of 3D objects.<br />
-									| Alarm: The user can receive function callbacks after a defined amount of time.<br />
-									| World Editor: The world can be seen and world data (position/rotation/scale) changed for 3D objects in realtime.<br />
-									| Serialization: Gameobject world data can be changed in world edit mode and updated upon a regular game execution.<br />
+									| Gravity: This was a mechanic that was central to the game because it dictated how all entities behave on a planet. <br />
+									I added a gravity field (spherical collider) to each planet to help delineate what planet an entity is pulled too. <br />
+									A strategy pattern was used to enable/disable gravity when needed.<br /><br />
+									| Space Clarity/ Camera Manipulation: Giving the player different vision levels was very important. Since there are <br />
+									planets and areas that the player would need to travel to, we gave the camera three different rigs to operate from <br />
+									at any time. So the player could have close-up micro camera views and also far-away views to help see the planets around. <br /><br />
+									| AI and Player Interactions: There were a few AI and player interactions that had many edge cases associated with them. <br />
+									If the player held an item, an AI on the same planet would chase the player, stun, and pickup that item. Likewise, if the <br />
+									AI held an item, the player could stun the AI, the AI would drop the item, and the player could pickup an item. The first  <br />
+									step in the developmental process was telling the correct AI (on the player's planet) to chase the player. I implemented <br />
+									a manager that helped manage the AI/Planet pairs that existed and then using this to trigger the correct AI to chase <br />
+									the player. Many iterations were needed to resolve the various edge cases surrounding the ownership of items and how <br />
+									player/AI collisions affected the state and movement of an item.<br />
 								</p>
 							</div>
 						</section>
